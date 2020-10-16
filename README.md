@@ -4,10 +4,10 @@ Bottom Flux Dialog
 ===================
 BottomFluxDialog, Simple way make your beautiful dialog
 
-[Demo Download]()
+[Demo Download](https://github.com/haerulmuttaqin/BottomFluxDialog/blob/master/app-release.apk)
 
 ## ScreenShot
-![image]()
+![image](https://github.com/haerulmuttaqin/BottomFluxDialog/blob/master/bottom-flux-ss.png)
 
 ## Setup
 The simplest way to use BottomFluxDialog is to add the library as aar dependency to your build.
