@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:background="@drawable/bg_round"
+            android:layout_width="40dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="10dp">
+            <ImageView
+                android:id="@+id/image"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_marginStart="36dp"
+                android:layout_marginEnd="36dp"
+                android:layout_height="170dp"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center"
+                android:text="{title}"
+                android:fontFamily="@font/black"
+                android:textColor="@color/titleColor"
+                android:textSize="@dimen/titleText" />
+            <TextView
+                android:id="@+id/message"
+                android:gravity="center"
+                android:text="{message}"
+                android:fontFamily="@font/medium"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/messageColor"
+                android:textSize="@dimen/messageText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/a_btn"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="26dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_height="40dp"
+        android:fontFamily="@font/bold"
+        android:layout_width="match_parent"
+        android:background="@drawable/btn_round_primary_selector"
+        android:textColor="@color/colorWhite"
+        android:singleLine="true"
+        android:text="OK"/>
+
+
+</LinearLayout>
