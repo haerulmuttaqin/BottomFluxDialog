@@ -85,6 +85,25 @@ Confirm dialog：
                 }
             })
             .show();
+            
+Input dialog:
+
+    BottomFluxDialog.inputDialog(MainActivity.this)
+                            .setTextTitle("Input Title")
+                            .setTextMessage("This is a input message")
+                            .setRightButtonText("SUBMIT")
+                            .setInputListener(new BottomFluxDialog.OnInputListener() {
+                                @Override
+                                public void onSubmitInput(String text) {
+                                    Toast.makeText(MainActivity.this, "Input : " + text, Toast.LENGTH_SHORT).show();
+                                }
+    
+                                @Override
+                                public void onCancelInput() {
+                                    Toast.makeText(MainActivity.this, "Button Cancel Clicked!", Toast.LENGTH_SHORT).show();
+                                }
+                            })
+                            .show();
 
 ## License
 
