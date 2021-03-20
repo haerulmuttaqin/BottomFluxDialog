@@ -5,6 +5,7 @@ import android.content.Context;
 import android.os.Parcelable;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -22,6 +23,7 @@ public final class BottomFluxDialog {
     private static String textTitle;
     private static TextView tvMessage;
     private static String textMessage;
+    private static EditText etInput;
     
     private static BottomFluxDialog getInstance(){
         if(instance == null){
@@ -74,6 +76,22 @@ public final class BottomFluxDialog {
         return getInstance();
     }
 
+    public static BottomFluxDialog inputDialog(final Context context) {
+        view = ((Activity)context).getLayoutInflater().inflate(R.layout.input_dialog, null);
+        leftButton = view.findViewById(R.id.a_btn);
+        rightButton = view.findViewById(R.id.b_btn);
+        ivDialog = view.findViewById(R.id.image);
+        tvTitle = view.findViewById(R.id.title);
+        tvMessage = view.findViewById(R.id.message);
+        etInput = view.findViewById(R.id.input);
+
+        dialog = new BottomSheetDialog(context, R.style.AppBottomSheetDialogTheme);
+        
+        etInput.requestFocus();
+        
+        return getInstance();
+    }
+
     public BottomFluxDialog setInfoButtonText(String textBtn) {
         if (textBtn != null) {
             leftButton.setText(textBtn);
@@ -101,6 +119,7 @@ public final class BottomFluxDialog {
         }
         return getInstance();
     }
+    
 
     public BottomFluxDialog setTextTitle(String textTitle) {
         tvTitle.setVisibility(View.GONE);
@@ -173,6 +192,30 @@ public final class BottomFluxDialog {
         return getInstance();
     }
 
+    public BottomFluxDialog setInputListener(final OnInputListener inputListener) {
+        leftButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+                if (inputListener != null) {
+                    inputListener.onCancelInput();
+                }
+            }
+        });
+        if (rightButton != null) {
+            rightButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    dialog.dismiss();
+                    if (inputListener != null) {
+                        inputListener.onSubmitInput(etInput.getText().toString());
+                    }
+                }
+            });
+        }
+        return getInstance();
+    }
+
     public interface OnAlertListener {
         void onClick();
     }
@@ -180,6 +223,11 @@ public final class BottomFluxDialog {
     public interface OnConfirmListener {
         void onLeftClick();
         void onRightClick();
+    }
+
+    public interface OnInputListener {
+        void onSubmitInput(String text);
+        void onCancelInput();
     }
 
     public interface LeftRightConfirmListener {

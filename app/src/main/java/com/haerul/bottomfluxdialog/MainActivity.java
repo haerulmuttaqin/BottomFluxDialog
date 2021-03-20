@@ -90,5 +90,30 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        /*INPUT*/
+        findViewById(R.id.inputDialog).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                BottomFluxDialog.inputDialog(MainActivity.this)
+                        .setTextTitle("Input Title")
+                        .setTextMessage("This is a input message")
+                        .setRightButtonText("SUBMIT")
+                        .setInputListener(new BottomFluxDialog.OnInputListener() {
+                            @Override
+                            public void onSubmitInput(String text) {
+                                Toast.makeText(MainActivity.this, "Input : " + text, Toast.LENGTH_SHORT).show();
+                            }
+
+                            @Override
+                            public void onCancelInput() {
+                                Toast.makeText(MainActivity.this, "Button Cancel Clicked!", Toast.LENGTH_SHORT).show();
+                            }
+                        })
+                        .show();
+
+            }
+        });
     }
 }

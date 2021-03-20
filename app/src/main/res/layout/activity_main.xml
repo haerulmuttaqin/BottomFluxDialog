@@ -237,4 +237,60 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            app:strokeColor="#E7E7E7"
+            app:strokeWidth="1dp"
+            app:cardElevation="0dp"
+            app:cardCornerRadius="10dp"
+            android:theme="@style/Theme.MaterialComponents.Light">
+
+            <LinearLayout
+                android:id="@+id/inputDialog"
+                android:background="?attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="26dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:padding="14dp"
+                    android:src="@drawable/ic_help"
+                    app:tint="@color/colorPrimary" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="INFO DIALOG"
+                    android:textAllCaps="true"
+                    android:textSize="12sp"
+                    android:textColor="#474747"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/bold"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        
+    </LinearLayout>
+
 </LinearLayout>
