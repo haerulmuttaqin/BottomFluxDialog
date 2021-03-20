@@ -37,7 +37,7 @@ The simplest way to use BottomFluxDialog is to add the library as aar dependency
             implementation 'com.github.haerulmuttaqin:BottomFluxDialog:0.1.0'
     }
 
-## Usage This Library
+## Usage
 
 **display dialogs easily**
 
