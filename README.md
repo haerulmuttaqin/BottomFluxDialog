@@ -24,7 +24,7 @@ The simplest way to use BottomFluxDialog is to add the library as aar dependency
     <dependency>
         <groupId>com.github.haerulmuttaqin</groupId>
         <artifactId>BottomFluxDialog</artifactId>
-        <version>0.1.0</version>
+        <version>0.1.1</version>
     </dependency>
 
 **Gradle**
@@ -34,7 +34,7 @@ The simplest way to use BottomFluxDialog is to add the library as aar dependency
     }
 
     dependencies {
-            implementation 'com.github.haerulmuttaqin:BottomFluxDialog:0.1.0'
+            implementation 'com.github.haerulmuttaqin:BottomFluxDialog:0.1.1'
     }
 
 ## Usage
