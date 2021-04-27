@@ -4,7 +4,7 @@ Bottom Flux Dialog
 ===================
 BottomFluxDialog, Simple way make your beautiful dialog
 
-[Demo Download](https://github.com/haerulmuttaqin/BottomFluxDialog/blob/master/app-release.apk)
+[Download Demo](https://github.com/haerulmuttaqin/BottomFluxDialog/blob/master/app-release.apk)
 
 ## ScreenShot
 ![image](https://github.com/haerulmuttaqin/BottomFluxDialog/blob/master/bottom-flux-ss.png)
