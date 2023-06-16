@@ -30,7 +30,7 @@ The simplest way to use BottomFluxDialog is to add the library as aar dependency
 ```
 
 **Gradle**
-
+`settings.gradle`
 ```gradle
 repositories {
 	maven { url 'https://jitpack.io' }
