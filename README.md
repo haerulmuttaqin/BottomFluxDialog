@@ -68,7 +68,7 @@ dependencyResolutionManagement {
 
 Info dialog：
 ```java
-    BottomFluxDialog.infoDialog(MainActivity.this)
+    BottomFluxDialog.infoDialog(this)
             .setTextTitle("Info Title")
             .setTextMessage("This is a info message")
             .setImageDialog(R.drawable.ic_dialog_info)
@@ -78,7 +78,7 @@ Info dialog：
 
 Alert dialog：
 ```java
-    BottomFluxDialog.alertDialog(MainActivity.this)
+    BottomFluxDialog.alertDialog(this)
             .setTextTitle("Alert Title")
             .setTextMessage("This is a alert message")
             .setImageDialog(R.drawable.ic_dialog_alert)
@@ -94,7 +94,7 @@ Alert dialog：
 
 Confirm dialog：
 ```java
-    BottomFluxDialog.confirmDialog(MainActivity.this)
+    BottomFluxDialog.confirmDialog(this)
             .setTextTitle("Confirm Title")
             .setTextMessage("This is a confirm message")
             .setImageDialog(R.drawable.ic_dialog_confirm)
@@ -117,7 +117,7 @@ Confirm dialog：
 Input dialog:
 
 ```java
-    BottomFluxDialog.inputDialog(MainActivity.this)
+    BottomFluxDialog.inputDialog(this)
                             .setTextTitle("Input Title")
                             .setTextMessage("This is a input message")
                             .setRightButtonText("SUBMIT")
