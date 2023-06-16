@@ -14,6 +14,7 @@ The simplest way to use BottomFluxDialog is to add the library as aar dependency
 
 **Maven**
 
+```xml
     <repositories>
 		<repository>
 		    <id>jitpack.io</id>
@@ -26,9 +27,11 @@ The simplest way to use BottomFluxDialog is to add the library as aar dependency
         <artifactId>BottomFluxDialog</artifactId>
         <version>0.1.1</version>
     </dependency>
+```
 
 **Gradle**
 
+```gradle
     repositories {
         maven { url 'https://jitpack.io' }
     }
@@ -36,6 +39,7 @@ The simplest way to use BottomFluxDialog is to add the library as aar dependency
     dependencies {
             implementation 'com.github.haerulmuttaqin:BottomFluxDialog:0.1.1'
     }
+```
 
 ## Usage
 
