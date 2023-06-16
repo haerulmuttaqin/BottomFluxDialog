@@ -42,16 +42,17 @@ The simplest way to use BottomFluxDialog is to add the library as aar dependency
 **display dialogs easily**
 
 Info dialog：
-
+```java
     BottomFluxDialog.infoDialog(MainActivity.this)
             .setTextTitle("Info Title")
             .setTextMessage("This is a info message")
             .setImageDialog(R.drawable.ic_dialog_info)
             .setInfoButtonText("CLOSE")
             .show();
+```
 
 Alert dialog：
-
+```java
     BottomFluxDialog.alertDialog(MainActivity.this)
             .setTextTitle("Alert Title")
             .setTextMessage("This is a alert message")
@@ -64,9 +65,10 @@ Alert dialog：
                 }
             })
             .show();
+```
 
 Confirm dialog：
-
+```java
     BottomFluxDialog.confirmDialog(MainActivity.this)
             .setTextTitle("Confirm Title")
             .setTextMessage("This is a confirm message")
@@ -85,9 +87,11 @@ Confirm dialog：
                 }
             })
             .show();
+```
             
 Input dialog:
 
+```java
     BottomFluxDialog.inputDialog(MainActivity.this)
                             .setTextTitle("Input Title")
                             .setTextMessage("This is a input message")
@@ -104,6 +108,7 @@ Input dialog:
                                 }
                             })
                             .show();
+```
 
 ## License
 
